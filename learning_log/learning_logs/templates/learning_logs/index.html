@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "learning_logs/base.html" %}
+{% block header %}
+    <div class="jumbotron">
+    <h1>Track your learning.</h1>
+{% endblock header %}
+{% block content %}
+    <a href="{% url 'users:register' %}">Register an account</a>
+ <p>Learning Log</p>
+ <p>Learning Log helps you keep track of your learning,for any topic you're learning about.</p>
+{% endblock content %}
+
+</body>
+</html>
